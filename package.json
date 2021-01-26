@@ -7,11 +7,17 @@
     "type": "git",
     "url": "git+https://github.com/opengovsg/nodebb-plugin-whitelist-email-domains.git"
   },
-  "author": "opengovsg",
+  "author": "opengovsg (https://open.gov.sg)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/opengovsg/nodebb-plugin-whitelist-email-domains/issues"
   },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "registration",
+    "email"
+  ],
   "homepage": "https://github.com/opengovsg/nodebb-plugin-whitelist-email-domains#readme",
   "nbbpm": {
     "compatibility": "^1.14.1"
