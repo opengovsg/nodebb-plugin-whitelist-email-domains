@@ -1,0 +1,18 @@
+{
+	"id": "nodebb-plugin-whitelist-email-domains",
+	"name": "Whitelist Email Domains",
+	"description": "Only allow specific email domains to register. Forked from https://github.com/NodeBB-Community/nodebb-plugin-whitelist-email-domains",
+    "url": "https://github.com/opengovsg/nodebb-plugin-whitelist-email-domains",
+    "library": "./library.js",
+	"staticDirs": {
+		"static": "./static"
+	},
+    "templates": "static/templates",
+    "hooks": [
+    	{"hook": "static:app.load", "method": "load"},
+        {"hook": "filter:admin.header.build", "method": "admin.menu"},
+        {"hook": "filter:register.check", "method": "filterEmailRegister"},
+        {"hook": "filter:user.updateProfile", "method": "filterEmailUpdate"}
+    ],
+    "faIcon": "fa-envelope"
+}
