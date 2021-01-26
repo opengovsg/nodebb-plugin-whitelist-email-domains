@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-whitelist-email-domains",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This NodeBB plugin allows you to whitelist a set of email domains that are allowed to register. All other domain names will be blocked.",
   "main": "library.js",
   "repository": {
@@ -27,6 +27,7 @@
   },
   "dependencies": {},
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "npm-publish": "npm publish --access public"
   }
 }
